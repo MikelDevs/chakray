@@ -32,8 +32,6 @@ public class App {
 
         String digits = String.join("", Arrays.copyOfRange(phone.split(" "), 1, phone.split(" ").length))
                 .replaceAll("\\D", "");
-        System.out.println(String.join("", Arrays.copyOfRange(phone.split(" "), 1, phone.split(" ").length))
-                .replaceAll("\\D", ""));
         return digits.length() == 10;
     }
 
@@ -95,7 +93,6 @@ public class App {
             case "sw":
                 return u -> {
                     String fValue = getFValue(u, prop);
-                    System.out.println("Comparing: " + fValue + " starts with " + value);
                     return fValue.startsWith(value);
                 };
             case "ew":
