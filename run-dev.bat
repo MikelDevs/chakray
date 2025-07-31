@@ -1,0 +1,1 @@
+watchexec -e java -r -- mvn compile exec:java
